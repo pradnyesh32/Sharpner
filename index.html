@@ -10,9 +10,11 @@
     function display(){
     var list = document.getElementsByClassName("list-group-item");
     list[2].style.backgroundColor= "green";
-    // for(i=0;i<list.length;i++){
-    //     list[i].style.font="bold";
-    // }
+    var li = document.getElementsByTagName("li");
+    
+    for(i=0;i<li.length;i++){
+         li[i].style.backgroundColor="blue";
+     }
     }
   </script>
 </head>
@@ -36,6 +38,13 @@
       <li class="list-group-item" style="font-weight:5px;">Item 3</li>
       <li class="list-group-item" style="font-weight:5px;">Item 4</li>
     </ul>
+    <br><br><br>
+    <ul id="items" class="list-group" >
+        <li class="list-group-item1">Item 1</li>
+        <li class="list-group-item1">Item 2</li>
+        <li class="list-group-item1">Item 3</li>
+        <li class="list-group-item1">Item 4</li>
+      </ul>
    </div>
   </div>
 
